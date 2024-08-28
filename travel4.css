@@ -1,0 +1,238 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('tombbackground.gif');
+    background-repeat: repeat;
+    background-size: contain;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: solid;
+    align-items: center;
+    justify-content: center;
+}
+li a:hover {
+    background-color: #111;
+}
+li i {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+li i:hover {
+    background-color: #111;
+}
+
+.footer-icon {
+    display: flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon i {
+    color: white;
+    text-align: center;
+    padding: 4px 40px;
+    text-decoration: none;
+}
+
+.footer-list {
+    display: flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    text-transform: capitalize;
+    letter-spacing: normal;
+    color: white;
+    background-color:#333;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content p:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out;
+}
+
+#mainImage {
+    object-fit: contain;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    display: block;
+    padding: 10px;
+    bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#mainImage:hover {
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out
+    ;
+}
+
+.tombImages {
+    width: fit-content;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    bottom: 20px;
+    backdrop-filter: blur(10px);
+    padding: 15px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tombImages img {
+    margin: 10px;
+    border-radius: 1rem;
+    object-fit: contain;
+    transition: all 0.6s ease-in-out;
+    opacity: 0.78;
+}
+
+.tombImages img:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+#left {
+    position: absolute;
+    left: 250px;
+    top: 700px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: rgba(255, 255, 255, 0.2);
+    border-radius: 30%;
+    transition: all 0.6s ease-in-out;
+}
+
+#right {
+    position: absolute;
+    right: 250px;
+    top: 700px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: rgba(255, 255, 255, 0.2);
+    border-radius: 30%;
+    transition: all 0.6s ease-in-out;
+}
+
+#left:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+#right:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+iframe {
+    border: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 35px auto;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+}
+
+
+
+
+
+
+
+
