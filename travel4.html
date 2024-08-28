@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconflag.png">
+    <title>Tomb of Akechi Mitsuhide</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-gamepad"></i>Home</a></li>
+            <li><a href="travel2.html"><i class="fa-solid fa-book-open"></i>History of Japanese Sengoku</a></li>
+            <li><a href="travel3.html"><i class="fa-solid fa-torii-gate"></i>Honnō-ji Temple</a></li>
+            <li><a href="travel4.html"><i class="fa-solid fa-dungeon"></i>Tomb of Akechi Mitsuhide</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h1>Tomb of Akechi Mitsuhide</h1>
+            <p>On June 2, 1582, Akechi Mitsuhide suddenly attacked his master, Oda Nobunaga, who was staying at the Honno-ji temple in Shimogyo Ward, Kyoto, forcing Nobunaga to perform harakiri. However, shortly after, on June 13, Mitsuhide himself was defeated at Yamazaki (Mt. Tennozan) by Toyotomi Hideyoshi, who had marched back from Bicchu Takamatsu Castle, in what is now Okayama City.
+                Mitsuhide fled towards Sakamoto Castle in Omi (now Shiga Prefecture). However, according to one account, he was attacked by peasants in a bamboo thicket (nicknamed “Akechi’s Thicket”) in what is now Ogurisukosaka-cho, Fushimi Ward, Kyoto. Sustaining serious injuries from bamboo spears thrust out from the thicket, he performed harakiri then and there, with one of his retainers then striking off his head.
+                Mitsuhide’s head was then hidden, the story goes, by his second (kaishakunin) , and the Head Tomb (Kubizuka) in Umemiya-cho, Higashiyama Ward, Kyoto is where it is said to have been buried.
+                Near Akechi’s Thicket was another tomb believed to be where his body (the torso) was buried.
+                This stone marker was erected by local well-wishers from Yamashina in October 1970 to pass on this story.
+            </p></div>
+                <button id="left"><i class="fa-solid fa-circle-left"></i></button>
+                <img id="mainImage" src="tombImg6.jpg" width=800px height=450px>
+                <button id="right"><i class="fa-solid fa-circle-right"></i></button>
+            <div class="tombImages">
+                <div id="tomb1"><img onclick="changeImage('tombImg1.jpg')" src="tombImg1.jpg" width=160px height=90px></div>
+                <div id="tomb2"><img onclick="changeImage('tombImg2.jpg')" src="tombImg2.jpg"  width=160px height=90px></div>
+                <div id="tomb3"><img onclick="changeImage('tombImg3.jpg')" src="tombImg3.jpg"  width=160px height=90px></div>
+                <div id="tomb4"><img onclick="changeImage('tombImg4.jpg')" src="tombImg4.jpg"  width=160px height=90px></div>
+                <div id="tomb5"><img onclick="changeImage('tombImg5.jpg')" src="tombImg5.jpg"  width=160px height=90px></div>
+                <div id="tomb6"><img onclick="changeImage('tombImg6.jpg')" src="tombImg6.jpg"  width=160px height=90px></div>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.9381294383174!2d135.77801797585388!3d35.008253872812034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e80778e465%3A0x18644e8d2a5d65aa!2sTomb%20of%20Akechi%20Mitsuhide!5e0!3m2!1sen!2shk!4v1724234303051!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="footer">
+        <ul class="footer-icon">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>Facebook
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>Twitter
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>Youtube
+                </a>
+            </li>
+        </ul>
+            <ul class="footer-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li>
+                <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+        <p class="copyright">copyright &copy;<span id=date></span> endless journey.co all rights reserved</p>
+    </footer>
+    <audio id="tombMusic" loop>
+        <source src="tombMusic.m4a" type="audio/mpeg">
+    </audio>
+    <script>
+        const date=(document.getElementById("date").innerHTML=new Date().getFullYear());
+        function changeImage(imageSrc) {
+        document.getElementById('mainImage').src = imageSrc;
+    };
+    const mainImage = document.getElementById('mainImage');
+    const right = document.getElementById('right');
+    const left = document.getElementById('left');
+    let currentImage = 'tombImg1.jpg';
+    right.addEventListener('click', () => {
+    if (currentImage === 'tombImg1.jpg') {
+        mainImage.src = 'tombImg2.jpg';
+        currentImage = 'tombImg2.jpg';
+    } else if (currentImage === 'tombImg2.jpg') {
+        mainImage.src = 'tombImg3.jpg';
+        currentImage = 'tombImg3.jpg';
+    } else if (currentImage === 'tombImg3.jpg') {
+        mainImage.src = 'tombImg4.jpg';
+        currentImage = 'tombImg4.jpg';
+    } else if (currentImage === 'tombImg4.jpg') {
+        mainImage.src = 'tombImg5.jpg';
+        currentImage = 'tombImg5.jpg';
+    } else if (currentImage === 'tombImg5.jpg') {
+        mainImage.src = 'tombImg6.jpg';
+        currentImage = 'tombImg6.jpg';
+    } else if (currentImage === 'tombImg6.jpg') {
+        mainImage.src = 'tombImg1.jpg';
+        currentImage = 'tombImg1.jpg';
+    }
+    });
+    left.addEventListener('click', () => {
+    if (currentImage === 'tombImg1.jpg') {
+        mainImage.src = 'tombImg6.jpg';
+        currentImage = 'tombImg6.jpg';
+    } else if (currentImage === 'tombImg6.jpg') {
+        mainImage.src = 'tombImg5.jpg';
+        currentImage = 'tombImg5.jpg';
+    } else if (currentImage === 'tombImg5.jpg') {
+        mainImage.src = 'tombImg4.jpg';
+        currentImage = 'tombImg4.jpg';
+    } else if (currentImage === 'tombImg4.jpg') {
+        mainImage.src = 'tombImg3.jpg';
+        currentImage = 'tombImg3.jpg';
+    } else if (currentImage === 'tombImg3.jpg') {
+        mainImage.src = 'tombImg2.jpg';
+        currentImage = 'tombImg2.jpg';
+    } else if (currentImage === 'tombImg2.jpg') {
+        mainImage.src = 'tombImg1.jpg';
+        currentImage = 'tombImg1.jpg';
+    }
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+            var templeMusic = document.getElementById('tombMusic');
+            tombMusic.volume = 0.6;
+            tombMusic.play();});
+    </script>
+</body>
+</html>

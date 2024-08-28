@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconflag.png">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-gamepad"></i>Home</a></li>
+            <li><a href="travel2.html"><i class="fa-solid fa-book-open"></i>History of Japanese Sengoku</a></li>
+            <li><a href="travel3.html"><i class="fa-solid fa-torii-gate"></i>Honnō-ji Temple</a></li>
+            <li><a href="travel4.html"><i class="fa-solid fa-dungeon"></i>Tomb of Akechi Mitsuhide</a></li>
+        </ul>
+    </nav>
+    <div class="game">
+    <div class="background">
+        <img src="background.gif" width=1320px height=720px>
+    </div>
+    <div class="raindrop">
+        <img src="raindrop.gif" width=1320px height=720px>
+    </div>
+    <div class="sengoku"><img src="sengoku.png" width=1200px heigh=200px>
+    </div>
+    <div id="character">
+        <img src="character.gif">
+    </div>
+    <div id="tree">
+        <img src="tree.gif">
+        <button class="view1">History of Japanese Sengoku</button>
+    </div>
+    <div id="castle">
+        <img src="castle.png">
+        <button type="button" class="view2">Honnō-ji Temple</button>
+    </div>
+    <div id="ruin">
+        <img src="ruin.gif">
+        <button type="button" class="view3">Tomb of Akechi Mitsuhide</button>
+    </div>
+    <div id="sculpture">
+        <a href="index.html"><img src="sculpture.png" width=180px height=180px></a>
+        <button class="homepage">Home</button>
+    </div>
+    </div>
+    <footer class="footer">
+        <ul class="footer-icon">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>Facebook
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>Twitter
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>Youtube
+                </a>
+            </li>
+        </ul>
+            <ul class="footer-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li>
+                <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+        <p class="copyright">copyright &copy; <span id=date></span> endless journey.co all rights reserved</p>
+    </footer>
+    <audio id="homemusic" loop>
+        <source src="homemusic.m4a" type="audio/mpeg">
+    </audio>
+    <script src="travel.js"></script>
+</body>
+</html>
